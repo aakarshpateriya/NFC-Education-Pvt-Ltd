@@ -1,0 +1,136 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and Typography */
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    background-color: #fff;
+    color: #333;
+}
+
+/* Containers */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+
+    background-color: orange;
+    color: white;
+    text-align: center;
+    padding: 1.5rem 0;
+}
+
+header h1 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+main {
+    padding: 20px 0;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+h2 {
+    color: orange;
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #f76c6c;
+    padding-bottom: 10px;
+}
+
+.faq-item {
+    margin-bottom: 20px;
+    border-left: 4px solid #f76c6c;
+    padding-left: 15px;
+}
+
+h3 {
+    font-size: 2rem;
+    color: #dd9103;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #666;
+    font-size: 1.6rem;
+    line-height: 1.8;
+}
+
+ul {
+    list-style-type: none;
+    margin-top: 10px;
+}
+
+ul li {
+    margin-bottom: 5px;
+    font-size: 1.6rem;
+}
+
+footer {
+    text-align: center;
+    padding: 15px 0;
+    background-color: orange;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.back-button {
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 5px;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    .faq-item {
+        padding-left: 12px;
+    }
+
+    h3 {
+        font-size: 1.8rem;
+    }
+
+    p {
+        font-size: 1.4rem;
+    }
+
+    ul li {
+        font-size: 1.4rem;
+    }
+
+    .back-button {
+        padding: 8px 16px;
+        font-size: 1.2rem;
+    }
+}

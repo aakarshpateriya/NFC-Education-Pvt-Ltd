@@ -1,0 +1,622 @@
+
+// This is the one way to create simple responsive grid view
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.header {
+  border: 1px solid red;
+  padding: 15px;
+}
+
+.menu {
+  width: 25%;
+  float: left;
+  padding: 15px;
+  border: 1px solid red;
+}
+
+.main {
+  width: 75%;
+  float: left;
+  padding: 15px;
+  border: 1px solid red;
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Chania</h1>
+</div>
+
+<div class="menu">
+  <ul>
+    <li>The Flight</li>
+    <li>The City</li>
+    <li>The Island</li>
+    <li>The Food</li>
+  </ul>
+</div>
+
+<div class="main">
+  <h1>The City</h1>
+  <p>Chania is the capital of the Chania region on the island of Crete. The city can be divided in two parts, the old town and the modern city.</p>
+  <p>Resize the browser window to see how the content respond to the resizing.</p>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+// This is an another way to create it but with 12 coloum to have more control on web view. 
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.header {
+  border: 1px solid red;
+  padding: 15px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+% All these columns should be floating to the left, and have a padding of 15px:
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+  border: 1px solid red;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Chania</h1>
+</div>
+
+<div class="row">
+
+<div class="col-3">
+  <ul>
+    <li>The Flight</li>
+    <li>The City</li>
+    <li>The Island</li>
+    <li>The Food</li>
+  </ul>
+</div>
+
+<div class="col-9">
+  <h1>The City</h1>
+  <p>Chania is the capital of the Chania region on the island of Crete. The city can be divided in two parts, the old town and the modern city.</p>
+  <p>Resize the browser window to see how the content respond to the resizing.</p>
+</div>
+
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+% // The final work with the grid css 
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+html {
+  font-family: "Lucida Sans", sans-serif;
+}
+
+.header {
+  background-color: #9933cc;
+  color: #ffffff;
+  padding: 15px;
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  padding: 8px;
+  margin-bottom: 7px;
+  background-color: #33b5e5;
+  color: #ffffff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.menu li:hover {
+  background-color: #0099cc;
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+<div class="header">
+  <h1>Chania</h1>
+</div>
+
+<div class="row">
+  <div class="col-3 menu">
+    <ul>
+      <li>The Flight</li>
+      <li>The City</li>
+      <li>The Island</li>
+      <li>The Food</li>
+    </ul>
+  </div>
+
+  <div class="col-9">
+    <h1>The City</h1>
+    <p>Chania is the capital of the Chania region on the island of Crete. The city can be divided in two parts, the old town and the modern city.</p>
+    <p>Resize the browser window to see how the content respond to the resizing.</p>
+  </div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+% // This is the final page creation with breakdown
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+html {
+  font-family: "Lucida Sans", sans-serif;
+}
+
+.header {
+  background-color: #9933cc;
+  color: #ffffff;
+  padding: 15px;
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  padding: 8px;
+  margin-bottom: 7px;
+  background-color: #33b5e5;
+  color: #ffffff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.menu li:hover {
+  background-color: #0099cc;
+}
+
+.aside {
+  background-color: #33b5e5;
+  padding: 15px;
+  color: #ffffff;
+  text-align: center;
+  font-size: 14px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.footer {
+  background-color: #0099cc;
+  color: #ffffff;
+  text-align: center;
+  font-size: 12px;
+  padding: 15px;
+}
+
+/* For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Chania</h1>
+</div>
+
+<div class="row">
+  <div class="col-3 menu">
+    <ul>
+    <li>The Flight</li>
+    <li>The City</li>
+    <li>The Island</li>
+    <li>The Food</li>
+    </ul>
+  </div>
+
+  <div class="col-6">
+    <h1>The City</h1>
+    <p>Chania is the capital of the Chania region on the island of Crete. The city can be divided in two parts, the old town and the modern city.</p>
+  </div>
+
+  <div class="col-3 right">
+    <div class="aside">
+      <h2>What?</h2>
+      <p>Chania is a city on the island of Crete.</p>
+      <h2>Where?</h2>
+      <p>Crete is a Greek island in the Mediterranean Sea.</p>
+      <h2>How?</h2>
+      <p>You can reach Chania airport from all over Europe.</p>
+    </div><p>
+  </div>
+</div>
+
+<div class="footer">
+  <p>Resize the browser window to see how the content respond to the resizing.</p>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+% This is the NFC website
+
+
+
+
+
+
+<html>
+
+
+  <head>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+
+    <title>N F C</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+
+      * {
+        box-sizing: border-box;
+
+      }
+
+      html {
+        font-family: "Lucida Sans", sans-serif;
+      }
+
+      body {
+        background-color: Black;
+      }
+
+      @media only screen and (max-width: 786px){
+         /* For mobile phones: */
+        body {
+          background-color: #ffffff;
+        }
+      }
+
+    </style>
+
+  </head>
+
+
+  <body>
+
+    <div class="header">
+
+
+      <div class=" header-text"> <h1> N F C </h1> <p style="font-size: 10px;"> Sports Education & Busnisses </p>
+
+      </div>
+
+      <div class="logoimage">
+
+        <a href="https://msha.ke/nowgongfootballclub">
+
+           <img src="Screenshot 2023-12-21 213018.png" alt="NFC Logo" width=25px height=25px >
+
+        </a>
+      </div>
+
+    </div>
+
+    <div style=" padding: 10px 2px 10px 2px;">
+
+    <div class="col-3 right-text"> 
+
+      <h2 style="color: #ffffff ;">What is NFC?</h2>
+      <p> Nations Football Club and Sports, Education and Business</p>
+
+        <hr>
+
+      <h2 style="color: #ffffff ;">Why NFC?</h2>
+      <p> To Empower Sports and Education. A inicitave against Drugs.</p>
+
+        <hr>
+
+      <h2 style="color: #ffffff ;">Where is NFC?</h2>
+      <p> NFC is located in the Nowgong, Chhtarpur, Madhya Pradesh, Bharat, 471201.</p>
+
+    </div>
+
+    </div>
+
+
+
+    <div style=" padding: 10px 2px 10px 2px;">
+
+
+
+    <div class="col-6 aboutNFC"> 
+
+      <h2> NFC's History </h2>
+      <p> The club was founded in 2021 by the founders of NFC, Ayush and Aakarsh. The club was founded to provide sports and education to the youth of the country. The club is a part of the NFC Foundation, which is a non-profit organization that works to improve the lives of the youth of the country.</p>
+
+    </div>
+
+
+
+    </div>
+
+
+
+
+    <div class="col-3 quickView">
+
+
+
+      <div class="quickViewAlign ">
+
+        <a href="https://www.facebook.com/getting_started/"> 
+
+
+        <img width="20" height="20" src="https://img.icons8.com/tiny-color/16/facebook-new.png" alt="facebook-new"/>
+
+
+        <!-- <a  href="https://icons8.com/icon/XuWFRXvra7aw/facebook">Facebook</a> icon by <a href="https://icons8.com">Icons8</a> -->
+
+        </a>
+
+      </div>
+
+      <div class="quickViewAlign ">
+
+        <a href="https://www.instagram.com/nowgongfootballclubandsports/?utm_source=ig_web_button_share_sheet">
+
+        <img width="20" height="20" src="https://img.icons8.com/tiny-color/16/instagram-new.png" alt="instagram-new"/>
+
+        <!-- <a  href="https://icons8.com/icon/qTtUMt1UzCUd/instagram">Instagram</a> icon by <a href="https://icons8.com">Icons8</a> -->
+
+        </a>
+
+        </div>
+
+      <div class="quickViewAlign ">
+
+        <img width="20" height="20" src="https://img.icons8.com/tiny-color/16/twitter.png" alt="twitter"/>
+
+        <!-- <a  href="https://icons8.com/icon/L2zv2Zo2qmbx/twitter">Twitter</a> icon by <a href="https://icons8.com">Icons8</a> -->
+
+        </div>
+
+
+
+      <div class="quickViewAlign ">
+
+
+        <a href="https://msha.ke/nowgongfootballclub" >
+
+        <img width="20" height="20" src="https://img.icons8.com/tiny-color/16/myspace.png" alt="myspace"/>
+
+        <!-- <a  href="https://icons8.com/icon/krjcRkWbYP1Q/myspace">MySpace</a> icon by <a href="https://icons8.com">Icons8</a> -->
+
+
+        </a>
+
+      </div>
+
+
+
+    </div>
+
+
+
+
+    <div class="col-12 nfcsports">
+
+          <diV>
+
+            <h2> <u>NFC Sports</u></h2>
+
+            <p> We offer multiple sports. Just click on the Sport for which you are willing to register:-<br><br>
+
+
+              <div class="nfcsportstype">
+
+              <div class="sportstype">
+                 Football 
+              </div>
+
+              <div class="sportstype">
+                 Basketball 
+              </div>
+
+              <div class="sportstype">
+                 Kabbadi 
+              </div>
+
+              <div class="sportstype">
+                 Chess
+              </div>
+
+              </div>
+
+            </p>
+
+          </div>
+
+
+
+
+    </div>
+
+
+
+    <script
+      async
+      crossorigin="anonymous"
+      data-clerk-publishable-key="pk_test_bGliZXJhbC1mZWxpbmUtNjAuY2xlcmsuYWNjb3VudHMuZGV2JA"
+      src="https://liberal-feline-60.clerk.accounts.dev/npm/@clerk/clerk-js@4/dist/clerk.browser.js"
+      type="text/javascript">
+    </script>
+
+
+
+
+  </body>
+
+</html>
