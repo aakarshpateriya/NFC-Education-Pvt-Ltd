@@ -1,0 +1,145 @@
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  
+  <meta charset="utf-8">
+   
+  <meta name="viewport" content="width=device-width">
+  
+  <title>NFC Education</title>
+  
+  <link href="style.css" rel="stylesheet" type="text/css" />
+
+
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  
+</head>
+
+<body >
+
+<!--   
+ This is the side access bar -->
+
+ <!-- <div id="sidebar"  style=" display: flex;"> -->
+
+<div style="display: flex;">
+
+
+
+  <div class="navbar" style="display: flex; position: fixed; ">
+
+    <div style="width: 10%; margin: auto;">
+      <button onclick="toggleSidebar()" style="border: none; background-color: white;">
+        <div class="col-md-12" style="margin: 0%; padding: 0px;"> <img src="Incons\menu.png" style="width: 30px; height: 30px; " > </div>
+           </button>
+    </div>
+
+    <div style="width: 40%; margin: 0px 0px 10px 0px ; text-align: left;">
+      <div style="margin: 0px 0px 0px 15px ;">
+      <h3> <b style="text-align: center;"> N F C </b> <p style="font-size: 8px; text-align: left;"> Education And Sports </p> </h3>  
+      </div>
+    </div>
+
+    <div style="width: 50%; display: flex; position: static;">
+    
+      <div class="navbaropt1" > <p> Home </p> </div>
+    
+      <div class="navbaropt1" > <p> Courses </p> </div>
+
+      <div class="navbaropt2" > <p> About-Us </p> </div>
+    
+      <div class="navbaropt2" > <p> Achivements </p> </div>
+    
+      <div class="navbaropt1" > <p> Help </p> </div>
+
+
+    </div>
+    </div>
+
+    <div class="col-17">
+    
+    </div>
+
+
+</div>
+
+
+
+<div class="col-12" style="display: flex;">
+
+  <div id="sidebar" class="col-17 leftsidebar1" style=" box-shadow: 1px 1px 2px rgb(0, 0, 0, 0.7); width: 70px;">
+
+ <div class="col-md-12" style="margin: 5px;"> <br> <p id="sidepara1"> </p> </div>
+ <div class="col-md-12" style="margin: 5px;"> <img src=" Incons\home.png" style="width: 150%; height: auto;"><br> <p id="sidepara1"> </p> </div>
+ <div class="col-md-12" style="margin: 5px;"> <img src=" Incons\shopping-cart.gif " style="width: 150%; height: auto;"> <p id="sidepara2"> </p> </div>
+ <div class="col-md-12" style="margin: 5px;"> <img src=" Incons\award.gif " style="width: 150%; height: auto;"><p id="sidepara3"> </p></div>
+ <div class="col-md-12" style="margin: 5px;"> <img src="  Incons\phone.gif " style="width: 150%; height: auto;"> <p id="sidepara4"> </p></div>
+ <div class="col-md-12" style="margin: 5px;"> <img src=" Incons\youtube.png " style="width: 150%; height: auto;"> <p id="sidepara5"> </p></div>
+ <div class="col-md-12" style="margin: 5px;"> <img src=" Incons\marker.png " style="width: 150%; height: auto;"> <p id="sidepara6"> </p></div>
+ <div class="col-md-12" style="margin: 5px;"> <img src=" Incons\like.gif " style="width: 150%; height: auto;"> <p id="sidepara7"> </p></div>
+ <div class="col-md-12" style="margin: 5px;"> <img src=" Incons\user.png " style="width: 150%; height: auto;"><p id="sidepara8"> </p> </div>
+ <div class="col-md-12" style="margin: 5px;"> <img src=" Incons\whatsapp.png " style="width: 130%; height: auto;"> <p id="sidepara9"> </p> </div>
+ <!-- <div class="col-md-12" style="margin: 5px;"> <img src=" Incons\location.gif " style="width: 150%; height: auto;"> <p id="sidepara10"> </p> </div> -->
+ <div class="col-md-12" style="margin: 5px;"> <img src=" Incons\lock.png " style="width: 140%; height: auto;"> <p id="sidepara11"> </p> </div>
+ 
+</div>
+
+<div class="col-16" style="display: static; position: absolute;">
+
+  
+
+  <div class="col-12" style="margin: auto;">
+\
+    <div class="col-17">  </div>
+
+    <div class="col-18" style="display: block;">
+
+      <div class="col-12" style=" width: 100%;">  
+      
+        <img src="WhatsApp Image 2024-05-31 at 7.20.25 PM.jpeg" style=" width: 100%; height: auto; margin: 0px;">
+
+      </div>
+   
+      <div class="col-12"> hi </div>
+     
+  </div>
+
+</div>
+
+
+</div>
+
+<!-- </div> -->
+ 
+
+<script>
+
+var x = document.getElementById("sidebar");
+var flag = 1;
+
+function toggleSidebar() {
+  if (flag) {
+    x.style.display = "block";
+    flag = 0;
+  } else {
+    x.style.display = "none";
+    flag = 1;
+  }
+}
+
+</script>
+
+
+</body>
+
+</html>
